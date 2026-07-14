@@ -31,5 +31,5 @@ convert_spanish_dates <- function(data_with_spanish_dates) {
     dplyr::mutate(
       Fecha = stringr::str_replace_all(Fecha, month_translations),
       Fecha = lubridate::dmy(Fecha)
-)
+    )
 }
